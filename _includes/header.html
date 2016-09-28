@@ -1,14 +1,31 @@
 <header class="brand__header">
   <div class="wrapper__div--header">
-    <aside class="social-media__aside"></aside>
+    
+    <a href="/">
+      <aside class="profile__aside" cite="http://game-icons.net/"></aside>
+    </a>
     
     <div class="wrapper__div--brand">
-        
-      <h1 class="brand__heading1--title">the <strong>W</strong>aypoint</h1>
+      
+      <h1 class="brand__heading1--title">
+        <a class="brand__anchor--heading1" href="/">the <strong>W</strong>aypoint</a>
+      </h1>
       <ul class="brand__unordered-list">
-        <li class="brand__list-item brand__list-item--about"><a class="brand__anchor" href=""><span class="pointer__span--header">&#10148; </span>About</a></li>
-        <li class="brand__list-item brand__list-item--contact"><a class="brand__anchor" href=""><span class="pointer__span--header">&#10148; </span>Contact</a></li>
-        <li class="brand__list-item brand__list-item--portfolio"><a class="brand__anchor" href=""><span class="pointer__span--header">&#10148; </span>Portfolio</a></li>
+        <a class="brand__anchor" href="/about">
+          <li class="brand__list-item brand__list-item--about">
+            About
+          </li>
+        </a>
+        <a class="brand__anchor" href="{{ site.contact_link }}">
+          <li class="brand__list-item brand__list-item--contact">
+            Contact
+          </li>
+        </a>
+        <a class="brand__anchor" href="{{ site.portfolio_link }}">
+          <li class="brand__list-item brand__list-item--portfolio">
+            Portfolio
+          </li>
+        </a>
       </ul>
     </div>
   </div>
