@@ -3,7 +3,7 @@
 ---
 
 /*************************
-    GLOBAL - Settings
+    #GLOBAL - Settings
 *************************/
 
 @font-face {
@@ -13,6 +13,7 @@
 
 body {
   font-family: sans-serif;
+  min-height: 100%;
 }
 
 h1 {
@@ -21,15 +22,16 @@ h1 {
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.4em;
 }
 
 a {
   text-decoration: none;
+  color: #A172C5;
 }
 
 
@@ -37,10 +39,10 @@ a {
 
 
 /*************************
-    HEADER -- Brand
+    #HEADER -- Brand
 *************************/
 
-/* Wrappers
+/* Layout
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .brand__header {
   position: relative;
@@ -50,7 +52,7 @@ a {
 
 .wrapper__div--header {
   overflow: hidden;
-  background-color: #333;
+  background-color: #2a2a3f;
   text-align: center;
   padding: 1em 1em 0em 1em;
 }
@@ -67,22 +69,28 @@ a {
 /* Profile
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .profile__aside {
-  background: url('../icons/mask.svg') no-repeat center center;
-  border: 2px solid #ddd;
-  box-shadow: 4px 2px 4px 1px #111;
-  
   position: absolute;
   top: 30px;
   display: inline-block;
+  border-radius: 100%;
+}
+
+.profile__anchor {
+  background: url('../icons/mask.svg') no-repeat center center;
   background-color: #A172C5;
+  border: 2px solid #ddd;
+  box-shadow: 4px 2px 4px 1px #111;
+  
+  top: 30px;
+  display: block;
   height: 120px;
   width: 120px;
   border-radius: 100%;
 }
 
-.profile__aside:hover {
-  background: url('../icons/mask--hover.svg') no-repeat center center;
-}
+// .profile__anchor:hover {
+//   background: url('../icons/mask--hover.svg') no-repeat center center;
+// }
 
 
 
@@ -136,6 +144,36 @@ a {
 
 /* Reponsive Fix
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+ @media only screen and (max-width: 500px) {
+   .wrapper__div--brand {
+     padding: 0.8em 0;
+   }
+   
+   .profile__aside {
+     height: 94px;
+     width: 94px;
+   }
+   
+   .brand__unordered-list {
+     margin: 16px 0 0 0;
+   }
+   
+   .brand__list-item {
+     padding: 0 14px;
+     margin: 0 0;
+   }
+   
+   .brand__list-item:before {
+     display: none;
+   }
+   
+   .brand__anchor {
+     font-size: 16px;
+   }
+   
+   
+ }
+
 @media only screen and (max-width: 380px) {
   .wrapper__div--brand {
     padding: 0.8em 0;
@@ -169,19 +207,75 @@ a {
 
 
 
+
 /*************************
-    SECTION -- Posts
+    #FOOTER - Attribution
 *************************/
 
-/* 
+/* Layout
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.posts__section {
+footer {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #313149;
+}
+
+
+
+
+/*************************
+    #SECTION -- Posts
+*************************/
+
+/* Layout
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.main__section {
+  text-align: center;
+  // background-color: #dad;
   max-width: 1000px;
-  margin: 30px auto 0 auto;
+  margin: 34px auto 0 auto;
+  overflow: hidden;
 }
 
-.page__heading2 {
+.posts__section {
+  text-align: left;
+  display: inline-block;
+  // background-color: Moccasin;
+  width: 600px;
+  padding: 2em;
+  box-sizing: border-box;
+}
+
+.other__aside {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  max-width: 360px;
+  background-color: #ada;
+}
+
+
+.posts__heading2 {
   margin-left: 20px;
+  text-decoration: underline;
+  text-decoration-color: red;
+  color: #333;
 }
 
 
+.posts__article {
+  margin: 12px 0 0 40px;
+}
+
+.posts__list-item {
+  margin-bottom: 2em;
+}
+
+.posts__span--date {
+  display: inline-block;
+  margin-top: 3px;
+  font-size: 0.95em;
+}
