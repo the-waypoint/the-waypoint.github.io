@@ -23,12 +23,11 @@ html, body {
 }
 
 h1 {
-  font-family: slim;
-  font-size: 3.4em;
+  font-size: 2em;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 h3 {
@@ -118,6 +117,8 @@ p {
   line-height: 0.8em;
   font-family: elcsa;
   font-size: 4.6em;
+  letter-spacing: 0;
+  word-spacing: 0;
 }
 
 .brand__anchor--heading1 {
@@ -136,7 +137,7 @@ p {
 
 .brand__list-item {
   display: inline-block;
-  padding: 0.7em 0.4em;
+  padding: 0.3em 0.6em;
 }
 
 .brand__list-item:before {
@@ -177,7 +178,7 @@ p {
    }
    
    .brand__list-item {
-     padding: 0 14px;
+     padding: 0 14px 10px 14px;
      margin: 0 0;
    }
    
@@ -238,7 +239,7 @@ p {
 }
 
 .main__footer, .pusher__div--footer {
-  height: 100px
+  height: 140px
 } 
 
 footer {
@@ -311,7 +312,28 @@ footer {
   background-color: #e1e1ed;
   max-width: 800px;
   box-sizing: border-box;
-  padding: 3em;
-  margin: 40px auto 80px auto;
+  padding: 3em 1em 4em 2em;
+  margin: 40px auto 100px auto;
   box-shadow: 2px 2px 5px 0px #aaa;
+}
+
+// .back-to-top__anchor {
+//   display: block;
+//   background-image: url('../icons/arrow-top.svg');
+//   position: relative;
+//   right: -2em;
+//   bottom: 1em;
+//   float: right;
+//   height: 3em;
+//   width: 3em;
+//   border-radius: 100%;
+//   box-shadow: 2px 2px 5px 0px #aaa;
+// }
+
+
+/* Title
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.single-post__heading1--title {
+  color: #1f1f1f;
+  
 }

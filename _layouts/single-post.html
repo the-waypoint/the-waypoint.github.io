@@ -10,16 +10,26 @@
   
 </head>
 <body>
+  <a id="top"></a>
   <div class="wrapper__div--body">
     {% include header.html %}
     
     <section class="single-post__section">
-      <h1>{{ page.heading }}</h1>
-      <hr>
+      <h1 class="single-post__heading1--title">{{ page.title }}: {{ page.heading }}</h1>
+      <br>
+      <br>
       {{ content }}
+      
+      
+      <!-- <a class="back-to-top__anchor" href="#"><img src=""></a> -->
     </section>
-    <div class="pusher__div--footer"></div>
+    <div class="pusher__div--footer">
+    </div>
+    
   </div>
+  
+  
+  
   {% include footer.html %}
 </body>
 </html>

@@ -17,4 +17,4 @@ That drives us.
 
 It is purpose that defines us.
 
-Purpose that binds us. 
+Purpose that binds us.
