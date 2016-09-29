@@ -12,7 +12,12 @@
 <body>
   <div class="wrapper__div--body">
     {% include header.html %}
-    {{ content }}
+    
+    <section class="single-post__section">
+      <h1>{{ page.heading }}</h1>
+      <hr>
+      {{ content }}
+    </section>
     <div class="pusher__div--footer"></div>
   </div>
   {% include footer.html %}

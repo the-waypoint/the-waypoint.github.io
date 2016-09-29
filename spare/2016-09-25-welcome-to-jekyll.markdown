@@ -1,6 +1,7 @@
 ---
-layout: setup
+layout: single-post
 title:  "Welcome to Jekyll!"
+heading: Welcome to Jekyll!
 date:   2016-09-25 13:34:24 +1300
 categories: jekyll update
 ---
