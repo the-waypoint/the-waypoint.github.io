@@ -15,10 +15,16 @@
     {% include header.html %}
     
     <section class="single-post__section">
-      <h1 class="single-post__heading1--title">{{ page.title }}: {{ page.heading }}</h1>
+      <h1 class="single-post__heading1--title">
+        <em><strong>{{ page.keywords--0 }}</strong></em> 
+        {{ page.title--before }} 
+        <em><strong>{{ page.keywords--1 }}</strong></em> 
+        {{ page.title--middle }}
+        <em><strong>{{ page.keywords--2 }}</strong></em> 
+        {{ page.title--after }}
+      </h1>
       <br>
-      <br>
-      {{ content }}
+      <article class="single-post__article">{{ content }}</article>
       
       
       <!-- <a class="back-to-top__anchor" href="#"><img src=""></a> -->

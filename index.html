@@ -12,7 +12,12 @@ layout: setup
           <li class="posts__list-item">
             <h3>
               <a class="posts__anchor--title" href="{{ post.url | prepend: site.baseurl }}">
-                {{ post.title | escape }}
+                <strong>{{ post.keywords--0 }}</strong> 
+                {{ post.title--before }} 
+                <strong>{{ post.keywords--1 }}</strong> 
+                {{ post.title--middle }}
+                <strong>{{ post.keywords--2 }}</strong> 
+                {{ post.title--after }}
               </a>
             </h3>
             
