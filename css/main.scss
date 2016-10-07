@@ -19,11 +19,13 @@
 html, body {
   height: 100%;
   font-family: sans-serif;
-  background-color: #f1f1f1;
+  background-color: #fefffd;
+  color: #3f3f3f;
 }
 
 h1 {
   font-size: 1.6em;
+  line-height: 1.3em;
 }
 
 h2 {
@@ -40,12 +42,19 @@ a {
 }
 
 p {
-  margin-top: 1em;
+  margin-top: 1.2em;
   line-height: 1.2em;
   word-spacing: 1px;
 }
 
+li {
+  margin-top: 0.7em;
+  line-height: 1.2em;
+}
 
+img {
+  max-width: 100%;
+}
 
 /*************************
     #HEADER -- #BRAND
@@ -133,7 +142,6 @@ p {
 .brand__unordered-list {
   display: inline-block;
   text-align: center;
-  margin-left: 1em;
 }
 
 .brand__list-item {
@@ -197,7 +205,7 @@ p {
 @media only screen and (max-width: 380px) {
   .wrapper__div--brand {
     padding: 0.8em 0;
-    margin: 1em auto 1em auto;
+    margin: 1em 0;
   }
   
   .profile__aside {
@@ -209,7 +217,7 @@ p {
   }
   
   .brand__list-item {
-    padding: 0 14px;
+    padding: 0 0;
     margin: 0 0;
   }
   
@@ -310,13 +318,14 @@ footer {
 /* Layout
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .single-post__section {
-  background-color: #fdfdfd;
-  max-width: 800px;
+  // background-color: #fdfdfd;
+  max-width: 700px;
   box-sizing: border-box;
-  padding: 3em 3em 4em 3em;
+  padding: 3em 1em 4em 1em;
   margin: 40px auto 100px auto;
-  box-shadow: 2px 2px 5px 0px #aaa;
-  border-radius: 1%;
+  // box-shadow: 2px 2px 5px 0px #aaa;
+  // border-radius: 1%;
+  border-bottom: 2px solid #aaa;
 }
 
 // .back-to-top__anchor {
@@ -336,9 +345,7 @@ footer {
 /* Title
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .single-post__heading1--title {
-  color: #1f1f1f;
   text-align: center;
-  text-decoration: underline;
 }
 
 .single-post__article {
