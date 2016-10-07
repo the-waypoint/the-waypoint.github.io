@@ -42,6 +42,26 @@ a {
   color: #A172C5;
 }
 
+pre {
+  font-size: 1.1em;
+  padding: 4px;
+  border: 1px solid #aaa;
+  color: #F42;
+}
+
+code {
+  font-size: 1.2em;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.highlighter-rouge {
+  color: #73BF3F;
+  font-size: 1.3em;
+  padding: 2px;
+  font-weight: bold;
+}
+
 p {
   margin-top: 1.2em;
   line-height: 1.2em;
