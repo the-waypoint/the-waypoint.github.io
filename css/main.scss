@@ -16,6 +16,8 @@
   src: url('../fonts/Elcsa.otf');
 }
 
+$paragraph-spacing: 1.4em;
+
 html, body {
   min-width: 320px;
   height: 100%;
@@ -43,28 +45,31 @@ a {
 }
 
 pre {
-  font-size: 1.1em;
-  padding: 4px;
+  font-size: 1.2em;
+  padding: 4px 10px;
   border: 1px solid #aaa;
   color: #F42;
+  margin-top: $paragraph-spacing;
 }
 
 code {
-  font-size: 1.2em;
   margin-left: 2px;
   margin-right: 2px;
 }
 
+code.highlighter-rouge {
+  background-color: #F5FFEA;
+}
+
 .highlighter-rouge {
   color: #73BF3F;
-  font-size: 1.3em;
+  font-size: 1.2em;
   padding: 2px;
-  font-weight: bold;
 }
 
 p {
-  margin-top: 1.2em;
-  line-height: 1.2em;
+  margin-top: $paragraph-spacing;
+  line-height: 1.6em;
   word-spacing: 1px;
 }
 

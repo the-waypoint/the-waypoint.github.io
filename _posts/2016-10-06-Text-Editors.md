@@ -32,6 +32,4 @@ I used to adore Sublime, I really did. But ever since that pop-up got on my nerv
 * <b>[Activate Power Mode](https://atom.io/packages/activate-power-mode)</b> when you get used to all the pretty syntax highlighting Atom does for you and the novelty has worn off.
 
 <br>
-<br>
-
 [![Meet Sublime](http://vignette2.wikia.nocookie.net/teamfortress/images/b/b8/Meet_the_Scout/revision/latest/scale-to-width-down/500?cb=20130629213122)](https://www.youtube.com/watch?v=geNMz0J9TEQ)

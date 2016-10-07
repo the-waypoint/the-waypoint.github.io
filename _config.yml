@@ -30,3 +30,4 @@ portfolio_link: https://github.com/csrail
 
 # Build settings
 markdown: kramdown
+highlight: rouge
