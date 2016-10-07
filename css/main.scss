@@ -17,6 +17,7 @@
 }
 
 html, body {
+  min-width: 320px;
   height: 100%;
   font-family: sans-serif;
   background-color: #fefffd;
@@ -129,6 +130,7 @@ img {
   font-size: 4.6em;
   letter-spacing: 0;
   word-spacing: 0;
+  margin-left: 10px;
 }
 
 .brand__anchor--heading1 {
@@ -142,11 +144,14 @@ img {
 .brand__unordered-list {
   display: inline-block;
   text-align: center;
+  margin-left: -30px;
 }
 
 .brand__list-item {
   display: inline-block;
   padding: 0.3em 0.6em;
+  margin: 0;
+  line-height: 0;
 }
 
 .brand__list-item:before {
@@ -172,23 +177,28 @@ img {
 
 /* Reponsive Fix
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
- @media only screen and (max-width: 500px) {
+ @media only screen and (max-width: 640px) {
    .wrapper__div--brand {
+     margin: 1em 0;
      padding: 0.8em 0;
    }
    
+   .brand__heading1--title {
+     margin-left: 10px;
+   }
+   
    .profile__aside {
-     height: 94px;
-     width: 94px;
+     display: none;
    }
    
    .brand__unordered-list {
-     margin: 16px 0 0 0;
+     margin: 0;
+     padding: 0;
    }
    
    .brand__list-item {
-     padding: 0 14px 10px 14px;
-     margin: 0 0;
+     padding: 1em 1em 0 1em;
+     margin: 0;
    }
    
    .brand__list-item:before {
@@ -213,11 +223,10 @@ img {
   }
   
   .brand__unordered-list {
-    margin: 16px 0 0 0;
+    padding: 0;
   }
   
   .brand__list-item {
-    padding: 0 0;
     margin: 0 0;
   }
   
