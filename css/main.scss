@@ -99,24 +99,29 @@ img {
   top: 30px;
   display: inline-block;
   border-radius: 100%;
+  box-shadow: 4px 2px 4px 1px #111;
+  border: 2px solid #ddd;
+  background-color: #746F7A;
+}
+
+.profile__aside:hover {
+  background: url('../icons/mask--hover.svg') no-repeat center center;
 }
 
 .profile__anchor {
   background: url('../icons/mask.svg') no-repeat center center;
-  background-color: #A172C5;
-  border: 2px solid #ddd;
-  box-shadow: 4px 2px 4px 1px #111;
-  
   top: 30px;
   display: block;
   height: 120px;
   width: 120px;
   border-radius: 100%;
+  transition: 1s;
+  background-color: #A172C5;
 }
 
-// .profile__anchor:hover {
-//   background: url('../icons/mask--hover.svg') no-repeat center center;
-// }
+.profile__anchor:hover {
+  opacity: 0;
+}
 
 
 
