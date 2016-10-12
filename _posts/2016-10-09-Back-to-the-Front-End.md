@@ -84,7 +84,7 @@ end
   * a relationship to another resource - `has_many :microposts`
   * requirements for data being received at the front-end -  `validates ... presence: true`
 * The model retrieves data from the database: SQL stuff is "bypassed" in Rails by using an Object Relational Mapper called ActiveRecord.
-* Remember that this retrieved data is all stored within the `@user` instance variable within the User controller - it's been a long ride hasn't it?
+* Remember that this retrieved data is all stored within the `@user` instance variable within the Users controller - it's been a long ride hasn't it?
 * The controller then gives the corresponding view access to this instance variable. Since the action within the controller was called `index`, an analogous name for the view is conventionally used - `index.html.erb`:
 
 {% highlight erb %}
@@ -115,6 +115,6 @@ end
 * The HTTP request is finally parsed and the Rails app returns to the client a webpage underpinned by dynamic processing.
 
 <br>
-There you have it: this is how a HTTP request makes it **back to the front end.**
+> There you have it: this is how a HTTP request makes it **back to the front end.**
 
 [![Back to the Future - I mean Front End](https://upload.wikimedia.org/wikipedia/en/d/db/Back_to_the_Future_%28time_travel_test%29_with_Michael_J._Fox_as_Marty_McFly.jpg)](https://www.youtube.com/watch?v=Q-CVfyoDxLI)
