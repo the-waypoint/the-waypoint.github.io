@@ -115,6 +115,7 @@ end
 * The HTTP request is finally parsed and the Rails app returns to the client a webpage underpinned by dynamic processing.
 
 <br>
-> There you have it: this is how a HTTP request makes it **back to the front end.**
+There you have it: this is how a HTTP request makes it **back to the front end.**
 
 [![Back to the Future - I mean Front End](https://upload.wikimedia.org/wikipedia/en/d/db/Back_to_the_Future_%28time_travel_test%29_with_Michael_J._Fox_as_Marty_McFly.jpg)](https://www.youtube.com/watch?v=Q-CVfyoDxLI)
+{: style="text-align: center;"}
