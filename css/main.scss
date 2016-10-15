@@ -17,14 +17,19 @@
 }
 
 $paragraph-spacing: 1.4em;
+$paragraph-color: #4D4D4D;
+
+$anchor-color: #A172C5;
+$pre-color: #ee6600;
+$rouge-code-color: #73BF3F;
+$rouge-code-background-color: #F5FFEA;
 
 html, body {
   min-width: 320px;
   height: 100%;
   font-family: sans-serif;
   background-color: #fefffd;
-  color: #3f3f3f;
-  overflow-x: hidden;
+  color: $paragraph-color;
 }
 
 h1 {
@@ -42,7 +47,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #A172C5;
+  color: $anchor-color;
 }
 
 p {
@@ -60,12 +65,21 @@ img {
   max-width: 100%;
 }
 
+a img {
+  border-radius: 2%;
+  box-shadow: 4px 3px 10px -1px #999;
+}
+
+figure {
+}
+
 pre {
   font-size: 1.2em;
   padding: 0px 10px 6px 10px;
   border: 1px solid #aaa;
-  color: #F42;
-  margin: 0.3em 0 1em 0;
+  color: $pre-color;
+  margin-top: 0.3em;
+  overflow-x: auto;
 }
 
 code {
@@ -74,36 +88,55 @@ code {
 }
 
 code.highlighter-rouge {
-  background-color: #F5FFEA;
+  background-color: $rouge-code-background-color;
 }
 
 .highlighter-rouge {
-  color: #73BF3F;
+  color: $rouge-code-color;
   font-size: 1.2em;
   padding: 2px;
 }
 
-
-figure {
-  
-}
-
 table {
   margin: auto;
+  table-layout: fixed;
 }
 
 th {
   padding: 0.5em;
   border-bottom: 1px solid #aaa;
-  text-align: center;
+  text-align: justify;
 }
 
 td {
   line-height: 1.2em;
   padding: 0.5em 0.66em;
   max-width: 13em;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
+.table__div--footer {
+  padding: 0.2em 0em;
+  border-top: 2px solid #aaa;
+  font-size: 0.9em;
+}
+
+.table__div--footer>p {
+  line-height: 1em;
+  margin: 0 0 2px 0;
+  padding: 0 0;
+}
+
+.overflow-x__div--scroll {
+  overflow-x: auto;
+  margin-top: $paragraph-spacing;
+  padding-bottom: 10px;
+}
+
+.heart {
+  color: #ee1111;
+}
 
 /*************************
     #HEADER -- #BRAND
@@ -222,8 +255,9 @@ td {
 .stripe__div--header {
   height: 0.4em;
   background-color: #E60471;
-  background: -moz-linear-gradient(right, #E60471, #8800BF); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(right, #E60471, #8800BF); /* Standard syntax */
+  background: -moz-linear-gradient(right, #E42950, #8800BF); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(right, #E42950, #8800BF); /* Standard syntax */
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 
@@ -290,8 +324,6 @@ td {
   .brand__anchor {
     font-size: 16px;
   }
-  
-  
 }
 
 
@@ -310,11 +342,13 @@ td {
 }
 
 .main__footer, .pusher__div--footer {
-  height: 140px
+  height: 140px;
 } 
 
 footer {
-  background-color: #313149;
+  margin: auto;
+  min-width: 320px;
+  max-width: 800px;
 }
 
 
@@ -363,6 +397,10 @@ footer {
   margin: 12px 0 0 40px;
 }
 
+.posts__unordered-list {
+  margin-left: -1.6em;
+}
+
 .posts__list-item {
   margin-bottom: 2em;
 }
@@ -383,11 +421,11 @@ footer {
   // background-color: #fdfdfd;
   max-width: 700px;
   box-sizing: border-box;
-  padding: 3em 1em 4em 1em;
-  margin: 40px auto 100px auto;
+  padding: 3em 1em 0em 1em;
+  margin: 40px auto 0 auto;
   // box-shadow: 2px 2px 5px 0px #aaa;
   // border-radius: 1%;
-  border-bottom: 2px solid #aaa;
+  // border-bottom: 2px solid #ccc;
 }
 
 // .back-to-top__anchor {
@@ -414,7 +452,5 @@ footer {
   
 }
 
-.heart {
-  color: #ee1111;
-}
+
 
