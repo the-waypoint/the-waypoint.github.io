@@ -3,7 +3,40 @@ layout: setup
 ---
 
 <section class="main__section">
-  <article class="about__article">
-    Hey GET OUT of here!! I'm still buildin' this part.
-  </article>
+  <div class="spacer__div--posts">
+    <section class="posts__section">
+      <h2 class="posts__heading2">Posts</h2>
+      <article class="posts__article">
+        <ul class="posts__unordered-list">
+          {% for post in site.posts %}
+          <li class="posts__list-item">
+            <h3>
+              <a class="posts__anchor--title" href="{{ post.url | prepend: site.baseurl }}">
+                <strong>{{ post.keywords--0 }}</strong> 
+                {{ post.title--before }} 
+                <strong>{{ post.keywords--1 }}</strong> 
+                {{ post.title--middle }}
+                <strong>{{ post.keywords--2 }}</strong> 
+                {{ post.title--after }}
+              </a>
+            </h3>
+            
+            <span class="posts__span--date">{{ post.date | date: "%b %-d, %Y" }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </article>
+      <!-- <p class="rss-subscribe">
+        subscribe 
+        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+          via RSS
+        </a>
+      </p> -->
+    </section>
+
+    <!-- <aside class="other__aside">
+      <p>Wot you looking at?</p>
+    </aside> -->
+  </div>
+
 </section>
