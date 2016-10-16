@@ -11,31 +11,39 @@
 </head>
 <body>
   <a id="top"></a>
-  <div class="wrapper__div--body">
     {% include header.html %}
     
-    <section class="single-post__section">
-      <h1 class="single-post__heading1--title">
-        <em><strong>{{ page.keywords--0 }}</strong></em> 
-        {{ page.title--before }} 
-        <em><strong>{{ page.keywords--1 }}</strong></em> 
-        {{ page.title--middle }} 
-        <em><strong>{{ page.keywords--2 }}</strong></em> 
-        {{ page.title--after }}
-      </h1>
-      <br>
-      <article class="single-post__article">{{ content }}</article>
-      
-      <!-- <a class="back-to-top__anchor" href="#"><img src=""></a> -->
-    </section>
-    
-    <div class="pusher__div--footer">
+  <div class="tile is-ancestor">
+    <div class="tile is-vertical is-8">
+      <div class="tile">
+        <div class="tile is-parent is-vertical">
+          <article class="tile is-child">
+            <!-- Any content you want here -->
+          </article>
+          <article class="tile is-child">
+            <!-- Any content you want here -->
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child">
+            <!-- Any content you want here -->
+          </article>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child">
+          {{ content }}
+        </article>
+      </div>
     </div>
-    
-  </div>
-  
-  
-  
+    <div class="tile is-parent">
+      <article class="tile is-child">
+        <article class="single-post__article">{{ content }}</article>
+      </article>
+    </div>
+</div>
+
+
   {% include footer.html %}
 </body>
 </html>
