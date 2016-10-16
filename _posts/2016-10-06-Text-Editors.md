@@ -8,7 +8,7 @@ keywords--2: PARTY
 title--after: with
 ---
 
-Your first two loves are always going to be either [Sublime](https://www.sublimetext.com/) or [Atom](https://atom.io/) - both are easy to use and free!
+Your first two loves are always going to be either Sublime or Atom - both are easy to use and free!
 
 If this was Team Fortress 2, Sublime would be the Scout and Atom the Heavy. 
 

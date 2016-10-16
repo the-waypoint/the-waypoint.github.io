@@ -1,14 +1,17 @@
 ---
 layout: single-post
+title: BACK<< to the FRONT END
 keywords--0: BACK<<
 title--before: to the 
 keywords--1: FRONT END
 title--middle: 
 keywords--2:
-title--after: 
+title--after:
+
+thumbnail: https://upload.wikimedia.org/wikipedia/en/d/db/Back_to_the_Future_%28time_travel_test%29_with_Michael_J._Fox_as_Marty_McFly.jpg
 ---
 
-A debriefing for how a Rails app parses a HTTP request; it follows on from [Hartl Chapter 2](https://www.railstutorial.org/book/toy_app#code-rails_routes).
+A debriefing for how a Rails app parses a HTTP request; it follows on from Hartl Chapter 2.
 
 * <u>Primary Focus</u>:
   * To keep track of how a **message** is being passed and received between MVC objects within a Rails app.
