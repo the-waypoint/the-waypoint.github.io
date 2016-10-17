@@ -2,7 +2,7 @@
 @import "../utilities/variables.sass"
 
 .tile
-  align-items: stretch
+  align-items: flex-start
   display: block
   flex-basis: auto
   flex-grow: 1
@@ -24,7 +24,7 @@
   &.is-vertical
     flex-direction: column
     & > .tile.is-child:not(:last-child)
-      margin-bottom: 20px !important
+      margin-bottom: 0px !important
   // Responsiveness
   +tablet
     &:not(.is-child)
