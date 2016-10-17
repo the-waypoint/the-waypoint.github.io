@@ -1,5 +1,7 @@
 ---
 ---
+@import "sass/utilities/variables.sass"
+
 .hero.is-fullheight
   min-height: 100vh
 
@@ -52,15 +54,11 @@
 .ord3
   order: 3
   
-.spare
-  font-size: 2em
-  color: red
-  
 // .tile
 //   border: 1px solid green
 
-// .column
-//   border: 1px solid red
+.column
+  border: 1px solid red
   
 .test
   display: block
@@ -69,3 +67,67 @@
     
 .box
   border: 1px solid rgba(10, 10, 10, 0.1)
+  
+.landing__div--post
+  padding: 2em 3em 2em 3em
+  
+.is-relative
+  position: relative
+  
+.quote-landing__div
+  padding: 2em 1em 2.6em 1em
+  background-color: rgba(170, 221, 170, 0.6)
+
+.quote-landing__paragraph--author
+  font-size: 1.4em
+  margin-bottom: 0.8em
+
+.quote-landing__paragraph
+  font-size: 1em
+  
+
+@media only screen and (min-width: 480px)
+  .quote-landing__paragraph
+    font-size: 1.6em
+
+@media only screen and (min-width: 768px)
+  .quote-landing__paragraph
+    font-size: 2em
+
+@media only screen and (min-width: 1180px)
+  .quote-landing__paragraph
+    font-size: 2.6em
+
+.quote-landing__span
+  display: inline-block
+  -webkit-transform: rotate(180deg)
+  -moz-transform: rotate(180deg)
+  -o-transform: rotate(180deg)
+  -ms-transform: rotate(180deg)
+  transform: rotate(180deg)
+
+.footer-links__footer
+  margin-bottom: 2em
+
+.footer-links__list-item
+  display: inline-block
+
+.footer-links__list-item .is-normal
+  border-top: none
+
+@media only screen and (min-width: 321px)
+  .footer-links__list-item .is-normal
+    font-size: 18px
+    height: 48px
+    padding-left: 14px
+    padding-right: 14px
+
+@media only screen and (min-width: 769px)
+  .footer-links__list-item .is-normal
+    font-size: 22px
+    height: 48px
+    padding-left: 20px
+    padding-right: 20px
+
+.fa-clone
+  margin-left: 10px
