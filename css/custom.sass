@@ -1,6 +1,6 @@
 ---
 ---
-@import "sass/utilities/variables.sass"
+$shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
 
 .hero.is-fullheight
   min-height: 100vh
@@ -22,7 +22,17 @@
   display: flex
   justify-content: center
   align-items: center
-  
+  flex-direction: column
+  flex-wrap: no-wrap
+
+.navigate__div--keywords
+  top: 20px
+  font-weight: bold
+  letter-spacing: 1px
+  word-spacing: 10px
+  background-color: rgba(0, 0, 0, 0.2)
+  padding: 6px
+
 .footer-icon__anchor
   font-size: 2em
   
@@ -31,7 +41,7 @@
   background-color: #E60471
   background: -moz-linear-gradient(right, #E42950, #8800BF) /* For Firefox 3.6 to 15 */
   background: linear-gradient(right, #E42950, #8800BF) /* Standard syntax */
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+  box-shadow: $shadow
 
 .kappa
   position: relative
@@ -57,8 +67,8 @@
 // .tile
 //   border: 1px solid green
 
-.column
-  border: 1px solid red
+// .column
+//   border: 1px solid red
   
 .test
   display: block
@@ -74,31 +84,37 @@
 .is-relative
   position: relative
   
-.quote-landing__div
+.quote-footer__div
   padding: 2em 1em 2.6em 1em
-  background-color: rgba(170, 221, 170, 0.6)
+  background-color: #C8E7C8
+  z-index: 10
+  
+.quote-footer__div--shadow
+  height: 10px
+  bottom: 10px
+  box-shadow: $shadow
 
-.quote-landing__paragraph--author
+.quote-footer__paragraph--author
   font-size: 1.4em
   margin-bottom: 0.8em
 
-.quote-landing__paragraph
+.quote-footer__paragraph
   font-size: 1em
   
 
 @media only screen and (min-width: 480px)
-  .quote-landing__paragraph
+  .quote-footer__paragraph
     font-size: 1.6em
 
 @media only screen and (min-width: 768px)
-  .quote-landing__paragraph
+  .quote-footer__paragraph
     font-size: 2em
 
 @media only screen and (min-width: 1180px)
-  .quote-landing__paragraph
+  .quote-footer__paragraph
     font-size: 2.6em
 
-.quote-landing__span
+.quote-footer__span
   display: inline-block
   -webkit-transform: rotate(180deg)
   -moz-transform: rotate(180deg)
@@ -114,6 +130,11 @@
 
 .footer-links__list-item .is-normal
   border-top: none
+  margin-left: 1px
+  bottom: 10px
+  border-top-right-radius: 0
+  border-top-left-radius: 0
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16)
 
 @media only screen and (min-width: 321px)
   .footer-links__list-item .is-normal
@@ -131,3 +152,15 @@
 
 .fa-clone
   margin-left: 10px
+  
+.is-absolute
+  position: absolute
+  
+.is-relative
+  position: relative
+  
+.icon
+  i:hover
+    color: #aaa
+  img:hover
+    opacity: 0.5

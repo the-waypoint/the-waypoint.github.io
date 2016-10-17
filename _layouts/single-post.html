@@ -1,49 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>The Waypoint</title>
-  
-  {% include stylesheets.md %}
-  
-</head>
+{% include head.html %}
 <body>
-  <a id="top"></a>
-    {% include header.html %}
-    
-  <div class="tile is-ancestor">
-    <div class="tile is-vertical is-8">
-      <div class="tile">
-        <div class="tile is-parent is-vertical">
-          <article class="tile is-child">
-            <!-- Any content you want here -->
-          </article>
-          <article class="tile is-child">
-            <!-- Any content you want here -->
-          </article>
-        </div>
-        <div class="tile is-parent">
-          <article class="tile is-child">
-            <!-- Any content you want here -->
-          </article>
-        </div>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child">
-          {{ content }}
-        </article>
-      </div>
-    </div>
-    <div class="tile is-parent">
-      <article class="tile is-child">
-        <article class="single-post__article">{{ content }}</article>
+  {% include header.html %}
+  
+  
+  <div class="tile is-parent">
+    <div class="tile is-child"></div>
+    <div class="tile is-child is-6">
+      <article class="single-post__article content">
+        <h1 class="single-post__heading1--title">
+          <em><strong>{{ page.keywords--0 }}</strong></em> 
+          {{ page.title--before }} 
+          <em><strong>{{ page.keywords--1 }}</strong></em> 
+          {{ page.title--middle }} 
+          <em><strong>{{ page.keywords--2 }}</strong></em> 
+          {{ page.title--after }}
+        </h1>
+        <br>
+        
+        {{ content }}
       </article>
     </div>
+    <div class="tile is-child"></div>
+  </div>
 </div>
 
 
-  {% include footer.html %}
+  {% include single-post-footer.html %}
 </body>
 </html>
