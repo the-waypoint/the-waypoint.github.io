@@ -35,3 +35,6 @@ highlight: rouge
 # Sass settings
 sass:
     sass_dir: _sass
+
+# Assets
+odin-icon: odin.png
