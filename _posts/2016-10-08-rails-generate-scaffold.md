@@ -1,5 +1,6 @@
 ---
 layout: single-post
+title: rails generate scaffold
 keywords--0: 
 title--before: rails generate scaffold
 keywords--1:

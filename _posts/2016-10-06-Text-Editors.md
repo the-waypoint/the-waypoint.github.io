@@ -1,5 +1,6 @@
 ---
 layout: single-post
+title: Text Editors you need to PARTY with
 keywords--0: 
 title--before: 
 keywords--1: Text Editors
