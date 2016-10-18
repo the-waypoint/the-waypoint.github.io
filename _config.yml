@@ -26,7 +26,7 @@ github_username:  csrail
 
 about_link: 
 contact_link: https://nz.linkedin.com/in/cornelius-soon-430597aa
-portfolio_link: https://github.com/csrail
+github_link: https://github.com/csrail
 
 # Build settings
 markdown: kramdown

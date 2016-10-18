@@ -1,11 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
 {% include head.html %}
+
 <body>
   {% include header.html %}
   
-  
   <div class="tile is-parent">
     <div class="tile is-child"></div>
-    <div class="tile is-child is-6">
+    <div class="tile is-child is-7">
       <article class="single-post__article content">
         <h1 class="single-post__heading1--title">
           <em><strong>{{ page.keywords--0 }}</strong></em> 
@@ -15,8 +17,7 @@
           <em><strong>{{ page.keywords--2 }}</strong></em> 
           {{ page.title--after }}
         </h1>
-        <br>
-        
+                
         {{ content }}
       </article>
     </div>
