@@ -2,6 +2,10 @@
 ---
 $shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
 $shadow-dark: 0 2px 5px 0 rgba(0,0,0,0.36),0 2px 10px 0 rgba(0,0,0,0.32)
+$shadow-waypoint: 0 2px 5px 0 rgba(228, 41, 80, 0.16),0 2px 10px 0 rgba(136, 0, 191, 0.12)
+
+.has-waypoint-shadow
+  box-shadow: $shadow-waypoint
 
 .hero.is-fullheight
   min-height: 100vh
@@ -224,3 +228,38 @@ $shadow-dark: 0 2px 5px 0 rgba(0,0,0,0.36),0 2px 10px 0 rgba(0,0,0,0.32)
   
 .front-end__button, .back-end__button
   padding: 20px 10px
+  
+.nav .title
+  font-weight: bold
+  
+.odin-decal
+  opacity: 0.6
+
+
+.post-index__div
+  padding: 1.6em
+  
+.post-date__paragraph
+  position: relative
+  bottom: 18px
+  
+.nav-menu__div a
+  padding: 0 1em
+  
+.single-post__article
+  position: relative
+  top: -1em
+  padding: 3em 1.4em
+  background-color: #fff    
+
+@media only screen and (min-width: 769px)
+  .single-post__article
+    padding: 3em
+
+@media only screen and (min-width: 1200px)
+  .single-post__article
+    padding: 3em 6em
+
+
+pre
+  border: 1px dashed #aaa
