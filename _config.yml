@@ -38,3 +38,6 @@ sass:
 
 # Assets
 odin-icon: odin.png
+
+# Posts Resource
+post-layout: post-show.html

@@ -1,5 +1,5 @@
 ---
-layout: single-post
+layout: post-show
 title: BACK<< to the FRONT END
 keywords--0: BACK<<
 title--before: to the 

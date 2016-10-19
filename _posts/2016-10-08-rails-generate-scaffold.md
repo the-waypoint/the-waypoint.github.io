@@ -1,5 +1,5 @@
 ---
-layout: single-post
+layout: post-show
 title: rails generate scaffold
 keywords--0: 
 title--before: rails generate scaffold
@@ -11,7 +11,7 @@ title--after:
 
 Frameworks are created with the premise of being lazy. They are purposed to prevent developers from rewriting the same code again and again for a particular task. Without frameworks, one would be wasting time trying to figure out the best principles for approaching their particular task when many have already been figured out.
 
-The predicament for a new user to the Rails framework is then: how do I navigate all these abstract concepts that have been established before me?
+The predicament for a new user to the Rails framework then is: how do I navigate all these abstract concepts that have been established before me?
 
 Introduce: scaffold.
 

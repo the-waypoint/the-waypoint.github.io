@@ -1,5 +1,5 @@
 ---
-layout: single-post
+layout: post-show
 title: Text Editors you need to PARTY with
 keywords--0: 
 title--before: 
