@@ -8,8 +8,9 @@
   <div class="tile is-parent">
     <div class="tile is-child"></div>
     <div class="tile is-child is-7">
-      <article class="single-post__article content">
-        <h1 class="single-post__heading1--title">
+      <article class="single-post__article content is-medium">
+        <p style="margin-bottom: -2em; color: hsl(0, 0%, 71%);">{{ page.date | date: '%B %d, %Y' }}</p>
+        <h1>
           <em><strong>{{ page.keywords--0 }}</strong></em> 
           {{ page.title--before }} 
           <em><strong>{{ page.keywords--1 }}</strong></em> 
