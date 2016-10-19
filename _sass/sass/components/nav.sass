@@ -6,11 +6,13 @@ $nav-height: 50px !default
 // Components
 
 .nav-toggle
-  +hamburger($nav-height)
+  align-items: center
+  display: flex
+  // +hamburger($nav-height)
   // Responsiveness
   +tablet
     display: none
-
+    
 .nav-item
   align-items: center
   display: flex

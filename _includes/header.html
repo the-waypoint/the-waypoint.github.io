@@ -1,33 +1,30 @@
 <nav class="nav has-waypoint-shadow">
   <div class="nav-left">
-    <a class="title nav-item" href="/">
+    <a class="title nav-item" href="/post-index">
       the WAYPOINT
     </a>
   </div>
 
-  <div class="nav-center">
+  <div class="nav-right nav-menu">
+    <a class="nav-item" href="{{ site.github_link }}">
+      About
+    </a>
+    <a class="nav-item" href="{{ site.github_link }}">
+      Contact
+    </a>
     <a class="nav-item" href="{{ site.github_link }}">
       <span class="icon">
         <i class="fa fa-github"></i>
       </span>
     </a>
-    <a class="nav-item odin-decal" href="https://gitter.im/TheOdinProject/theodinproject">
-      <span class="icon">
-        <img src="/images/{{ site.odin-icon }}" alt="">
-      </span>
-    </a>
   </div>
-
-  <div class="nav-right nav-menu nav-menu__div">
-    <a class="nav-item" href="#">
-      Home
-    </a>
-    <a class="nav-item" href="#">
+  
+  <div class="nav-toggle">
+    <a class="nav-item" href="">
       About
-    </a>
-    <a class="nav-item" href="#">
+    </a>  
+    <a class="nav-item" href="">
       Contact
-    </a>
+    </a>  
   </div>
-
 </nav>

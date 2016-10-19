@@ -10,7 +10,7 @@
 
 $shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
 $shadow-dark: 0 2px 5px 0 rgba(0,0,0,0.36),0 2px 10px 0 rgba(0,0,0,0.32)
-$shadow-waypoint: 0 2px 5px 0 rgba(228, 41, 80, 0.16),0 2px 10px 0 rgba(136, 0, 191, 0.12)
+$shadow-waypoint: 0 2px 5px 0 hsla(210, 64%, 38%, 0.16),0 2px 10px 0 rgba(136, 0, 191, 0.12)
 
 .has-waypoint-shadow
   box-shadow: $shadow-waypoint
@@ -55,6 +55,7 @@ $shadow-waypoint: 0 2px 5px 0 rgba(228, 41, 80, 0.16),0 2px 10px 0 rgba(136, 0, 
 .stripe__div
   height: 0.4em
   background-color: #E60471
+  background: -webkit-linear-gradient(right, #E42950, #8800BF)
   background: -moz-linear-gradient(right, #E42950, #8800BF) /* For Firefox 3.6 to 15 */
   background: linear-gradient(right, #E42950, #8800BF) /* Standard syntax */
   box-shadow: $shadow
@@ -243,31 +244,92 @@ $shadow-waypoint: 0 2px 5px 0 rgba(228, 41, 80, 0.16),0 2px 10px 0 rgba(136, 0, 
 .odin-decal
   opacity: 0.6
 
+  
+pre
+  border: 1px dashed #aaa
+ 
+th
+  padding: 0.5em
+  border-bottom: 1px solid #aaa
+  text-align: center
+  text-align: justify
 
-.post-index__div
-  padding: 1.6em
+ 
+td 
+  line-height: 1.2em
+  padding: 0.5em 0.66em
+  max-width: 13em
+  word-wrap: break-word
+  white-space: normal
+
+
+.table__div--footer
+  font-size: 0.9em
+  padding: 0.2em 0em
+  margin-bottom: 2.6em
+  border-top: 2px solid #aaa
+
+.table__div--footer>p 
+  line-height: 1.2em
+  padding: 0 0
+
+.overflow-x__div--scroll 
+  overflow-x: auto
+  padding-bottom: 10px
+
+.post-show__section
+  max-width: 1000px
+  margin: auto
   
-.post-date__paragraph
+.post-show__article
+  max-width: 700px
+  margin: auto
+  box-sizing: content-box
   position: relative
-  bottom: 18px
   
-.nav-menu__div a
-  padding: 0 1em
-  
-.single-post__article
-  position: relative
-  top: -1em
-  padding: 3em 1.4em
+  padding: 5em 2em 5em 2em
   background-color: #fff    
 
 @media only screen and (min-width: 769px)
-  .single-post__article
-    padding: 3em
+  .post-show__article
+    padding: 5em 6em 5em 6em
 
-@media only screen and (min-width: 1200px)
-  .single-post__article
-    padding: 3em 6em
+// @media only screen and (min-width: 1200px)
+//   .post-show__article
+//     padding: 3em 6em
 
 
-pre
-  border: 1px dashed #aaa
+.nav-right a
+  padding: 0 1em
+  &:last-child
+    padding-right: 2em
+
+
+
+.post-index__section
+  max-width: 700px
+  padding: 4em 0.3em
+  margin: auto
+    
+.posts__list-item
+  
+  padding-bottom: 3em
+  &:hover
+    color: $link
+    .post-date__paragraph
+      color: $link
+  .post-date__paragraph
+    color: $grey
+  .posts__anchor--title
+    color: $grey-dark
+
+.posts__heading3--title
+  font-size: 2.25em
+  
+.post-date__paragraph
+  font-size: 1.4em
+  position: relative
+  top: 0.3em
+  
+// .column
+//   border: 1px solid red

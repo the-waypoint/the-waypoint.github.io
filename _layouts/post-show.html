@@ -5,10 +5,10 @@
 <body>
   {% include header.html %}
   
-  <div class="tile is-parent">
-    <div class="tile is-child"></div>
-    <div class="tile is-child is-7">
-      <article class="single-post__article content is-medium">
+  <section class="columns post-show__section">
+    <!-- <aside class="column"></aside> -->
+    <article class="column post-show__article">
+      <div class="content is-medium">
         <p style="margin-bottom: -2em; color: hsl(0, 0%, 71%);">{{ page.date | date: '%B %d, %Y' }}</p>
         <h1>
           <em><strong>{{ page.keywords--0 }}</strong></em> 
@@ -20,13 +20,12 @@
         </h1>
                 
         {{ content }}
-      </article>
-    </div>
-    <div class="tile is-child"></div>
+      </div>
+    </article>
   </div>
-</div>
+</section>
 
 
-  {% include single-post-footer.html %}
+  {% include footer.html %}
 </body>
 </html>
