@@ -9,16 +9,18 @@ keywords--2:
 title--after:
 ---
 
-This is a debriefing for how a Rails app parses a HTTP request; it follows on from Hartl Chapter 2.
+The primary focus of this debriefing is to keep track of how a Rails app parses a HTTP request in order to serve a webpage. What we are attempting to do is keep track of how this **message** is passed and received between MVC objects within a Rails app.
 
-* <u>Primary Focus</u>:
-  * To keep track of how a **message** is being passed and received between MVC objects within a Rails app.
-* <u>Secondary Focus</u>:
-  * To locate within your project tree each file related to the MVC architecture as they are being activated.
-  * `./routes.rb`
-  * `./app/controllers/users/users_controller.rb`
-  * `./app/models/user.rb`
-  * `./app/views/users/index.html.erb`
+The project tree for a Rails app is *huge*. However with comforting adage of 'convention over configuration', there is an obvious flow in which files are activated. This follows the MVC architecture:
+
+`./routes.rb`
+
+`./app/controllers/users/users_controller.rb`
+
+`./app/models/user.rb`
+
+`./app/views/users/index.html.erb`
+
 
 A lot of "magic" happens under the hood after running:
 

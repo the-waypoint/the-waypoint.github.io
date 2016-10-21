@@ -1,9 +1,8 @@
 ---
 layout: post-index
 ---
-<section class="columns post-index__section">
-  <div class="column">
-    <article class="">
+<div class="columns">
+  <section class="column is-10 is-offset-2 post-index__section">
       <ul class="posts__unordered-list">
         {% for post in site.posts %}
         <li class="posts__list-item">
@@ -23,6 +22,5 @@ layout: post-index
         </li>
         {% endfor %}
       </ul>
-    </article>
-  </div>
-</section>
+  </section>
+</div>
