@@ -264,7 +264,7 @@ td
   box-sizing: content-box
   position: relative
   
-  padding: 9em 2em 5em 2em
+  padding: 9em 1.2em 5em 1.2em
   background-color: #fff    
 
 @media only screen and (min-width: 769px)
@@ -319,11 +319,21 @@ td
   min-width: 0
 
 .mosaic-post__article
-  padding: 4em 1em 4em 1em
+  box-sizing: content-box
+  margin: auto
+  max-width: 700px
+  background-color: #fff
+  padding: 2.7em 1.2em 4em 1.2em
+  margin-bottom: none
+  box-shadow: $shadow
   &>h1>a
     color: $text-strong
     &:hover
       color: $blue
+
+@media only screen and (min-width: 769px)
+  .mosaic-post__article
+    padding: 9em 6em 5em 6em
 
 .read-time__paragraph
   color: $green
