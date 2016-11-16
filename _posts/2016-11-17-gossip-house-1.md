@@ -9,7 +9,7 @@ keywords--2:
 title--after: 
 ---
 
-'Gossip House' is going to be an app where a listing of posts, in chronological order, from all users are shown on a page. Names of the users who have made the posts remain anonymous if you are an outsider - that is, if you are not logged in yet.
+'Gossip House' is going to be an app with a listing of posts, in chronological order, from all users are shown on a page. Names of the users who have made the posts remain anonymous if you are an outsider - that is, if you are not logged in yet.
 
 It has taken a long time to get to this point:
 
@@ -110,4 +110,4 @@ The best way to go about this is to import the current tree using `@import '*'`.
 
 Pretty sweet. This is how you would go about implementing a framework into your Rails app without using gems.
 
-Next up... I will have a think about the Users and Post resources.
+Next up... I will have a think about the Users and Posts resources.

@@ -63,11 +63,11 @@ The quality of pragmatism is relatively straight-forward. Content from the lesso
 In fact, context and pragmatism are two sides of the same coin. You cannot separate one from the other. Context provides you with the ability to apply yourself while pragmatism may only be exercised when you are aware of where you are heading towards.
 
 <br>
-The way Kevin and I solved these Git lessons was to provide:
+The way [@KevinMulhern](https://github.com/KevinMulhern) and I solved these Git lessons was to provide:
 
 * A high level overview of version control systems and their history in our [Introduction to Git](http://www.theodinproject.com/courses/web-development-101/lessons/introduction-to-git)
 * A lesson dedicated to the [Git Basics](http://www.theodinproject.com/courses/web-development-101/lessons/git-basics) workflow with powerful metaphors written by me :D
-* A [practical project](http://www.theodinproject.com/courses/web-development-101/lessons/practicing-git-basics) to tie all the theoretical concepts together. Which [@KevinMulhern](https://github.com/KevinMulhern) mostly wrote
+* A [practical project](http://www.theodinproject.com/courses/web-development-101/lessons/practicing-git-basics) to tie all the theoretical concepts together. Which Kevin mostly wrote
 
 This all came about through much brainstorming and ideas being sent back and forth between us. When one idea spawned, it was critiqued, accepted or trashed entirely. We then kept polishing what we had: reading over and over the lessons to see if it made sense to beginners. We polished the lessons so much I could vomit if I ever had to read the `git add -A` command again in the next 48 hours after deployment.
 
