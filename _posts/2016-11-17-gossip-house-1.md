@@ -9,7 +9,7 @@ keywords--2:
 title--after: 
 ---
 
-'Gossip House' is going to be an app with a listing of posts, in chronological order, from all users are shown on a page. Names of the users who have made the posts remain anonymous if you are an outsider - that is, if you are not logged in yet.
+'Gossip House' is going to be an app with a listing of posts, in chronological order, from all users shown on a page. Names of the users who have made the posts remain anonymous if you are an outsider - that is, if you are not logged in yet.
 
 It has taken a long time to get to this point:
 
